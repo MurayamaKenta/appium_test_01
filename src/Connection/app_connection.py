@@ -7,13 +7,26 @@ from appium import webdriver
 
 
 ### MurayamaKenta -> ###
-caps = {}
-caps["platformName"] = "Android"
-caps["automationName"] = "Appium"
-caps["platformVersion"] = "8.0"
-caps["deviceName"] = "Android Emulator"
+caps = {
+    "platformName" : "Android",
+    "automationName" : "Appium",
+    "platformVersion" : "8.0",
+    "deviceName" : "Android Emulator",
+    "app" : "/Users/murayamakenta/Downloads/test/app-rc.apk",
+    "appWaitDuration" : 10000 ,
+    "appWaitActivity" : "com.quipper.school.assignment.ui.start.login.LoginActivity",
+ }
+
+# caps["platformName"] = "Android"
+# caps["automationName"] = "Appium"
+# caps["platformVersion"] = "8.0"
+# caps["deviceName"] = "Android Emulator"
 # caps["app"] = "/Users/murayamakenta/Downloads/test/app-rc.apk"
-caps["app"] = "/Users/murayamakenta/Downloads/test/15.apk"
+# caps["appWaitDuration"] = 10000
+# caps["appWaitActivity"] = "com.quipper.school.assignment.ui.start.login.LoginActivity"
+
+
+
 
 ### <- MurayamaKenta ###
 
@@ -30,5 +43,5 @@ caps["app"] = "/Users/murayamakenta/Downloads/test/15.apk"
 
 def driver():
     global caps
-    driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", caps)
+    driver = webdriver.Remote("http://0.0.0.0:4723/wd/hub", caps)
     return driver
