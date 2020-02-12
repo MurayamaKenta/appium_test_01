@@ -7,7 +7,7 @@ from appium import webdriver
 import time
 from appium.webdriver.common.touch_action import TouchAction
 from Connection import app_connection
-
+# もりや
 
 
 # driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
