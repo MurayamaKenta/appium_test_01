@@ -4,9 +4,21 @@
 # coding: utf-8
 
 from appium import webdriver
+import time
 
 
 ### MurayamaKenta -> ###
+# iOS
+# caps = {
+#   "platformName": "iOS",
+#   "automationName": "XCUITest",
+#   "platformVersion": "12.0",
+#   "deviceName": "iPhone Simulator",
+#   "app": "/Users/murayamakenta/Downloads/test/qlearn-react-native-master",
+#   "appWaitDuration" : 10000,
+# }
+
+# Android
 caps = {
     "platformName" : "Android",
     "automationName" : "Appium",
@@ -16,18 +28,6 @@ caps = {
     "appWaitDuration" : 10000 ,
     "appWaitActivity" : "com.quipper.school.assignment.ui.start.login.LoginActivity",
  }
-
-# caps["platformName"] = "Android"
-# caps["automationName"] = "Appium"
-# caps["platformVersion"] = "8.0"
-# caps["deviceName"] = "Android Emulator"
-# caps["app"] = "/Users/murayamakenta/Downloads/test/app-rc.apk"
-# caps["appWaitDuration"] = 10000
-# caps["appWaitActivity"] = "com.quipper.school.assignment.ui.start.login.LoginActivity"
-
-
-
-
 ### <- MurayamaKenta ###
 
 ### RyoMoriya -> ###
