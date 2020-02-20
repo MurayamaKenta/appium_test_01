@@ -7,7 +7,7 @@ from appium import webdriver
 import time
 from appium.webdriver.common.touch_action import TouchAction
 from Connection import app_connection
-# もりや
+
 
 
 # driver = webdriver.Remote("http://localhost:4723/wd/hub", caps)
@@ -24,6 +24,7 @@ el5.send_keys("quipper123")
 
 el6 = driver.find_element_by_id("jp.studysapuri.android.rc:id/login_B")
 el6.click()
+
 
 time.sleep(7) 
 
